@@ -37,6 +37,7 @@ Now let's see how the game actually looks like.
 ### Gameplay:
 
 You first choose what difficulty you want to choose then the game starts:
+
 ![mainMenu](https://github.com/DYasser/Dodge_Java/blob/master/images/gameStart.png)
 
 The game is all about dodge, hence the name. There are 3 main entities that the player should try to avoid at all costs, the **green dots** (snakes), the **white meteors** that keep falling from the sky and the **big white ball** in the middle of the screen that keeps moving up and down.
@@ -44,9 +45,11 @@ There are other entities such as the *red lava* carpet under the plateforms at t
 The most anoying enemies will probably be the meteors and the snakes, since these two are related. When the player gets hit by a snake a meteor gets added to the 5 initial ones. Same thing for meteors with snakes, which are 2 at the beginning.
 
 The player has the ability to sprint but can also slow down time by using Q. All these commands can be check in the middle of the game by prompting the pause menu.
+
 ![mainMenu](https://github.com/DYasser/Dodge_Java/blob/master/images/pauseScreen.png)
 
 Finally, after trying your best the game finally ends by a gameover screen showing you the score you got and the max score that anyone has done yet (different for each difficulty)
+
 ![mainMenu](https://github.com/DYasser/Dodge_Java/blob/master/images/gameOverScreen.png)
 
 - [X] Play the game
