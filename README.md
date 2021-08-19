@@ -87,5 +87,27 @@ Finally, after trying his/her best, the game finally ends on a Game Over screen 
 
 Now that I am done explaining the player's perspective and explaining most of the logic, we can move on to explaining how I coded the logic of this game.
 
+
 ## The Code Logic:
 
+I coded the game using Java, but the logic stays the same for most languages. In some cases, there might be better options for other languages with broader libraries.
+
+I started by creating a game thread that will be leading the whole game. I created a game loop that will keep looping and updating everything needed for the user to be able to play the game smoothly.
+
+In this section I will explain four main parts that I think are most important when talking about the process of coding this program. 
+
+* Collisions: 
+Collisions are the most important characteristic inside this game. Collisions are what allows all the entities to talk and communicate to each other. We can see two main collisions here: Block Collision such as the platforms that allows the user to step on when collided, and Damage Collision that occurs when the user hits an enemy.
+
+Collisions work using the coordinates of two points in each entity. So, when an entity enters another we can know that by substracting the value of one entity and help us with its width or heigth to know if an entity collided with another one. The picture below demonstrates what I explained here. 
+
+![mainMenu](https://github.com/DYasser/Dodge_Java/blob/master/images/collisions.png)
+
+After calculating these collisions, the program needs to be able to do so each time every millisecond. This is where the *Handler* shows its importance. The handler's job is easy, yet hard. He needs to update each entity added to him every millisecond.
+
+By updating every entity, he is updating the new values but also the rendering since the user needs to have a graphical return to understand what is happening.
+
+Now that I explained how I dealed with collisions we can move to another important aspect.
+
+* Gravity:
+In 
