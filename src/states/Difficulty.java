@@ -37,7 +37,7 @@ public class Difficulty extends MouseAdapter{
 	{	
 		URL url = null;
 		try {
-			url = new URL("file:\\D:\\Scripts\\eclipse-workspace\\GamePract2\\src\\res\\bip.wav");
+			url = new URL("file://C://Users//LENOVO//Documents//GitHub//Dodge_Java//src//res//bip.wav");
 		} catch (MalformedURLException e1) {
 			e1.printStackTrace();
 		}

@@ -92,7 +92,7 @@ public class Game extends Canvas implements Runnable, KeyListener{
 			g.setColor(new Color(0,0,0)); 
 			g.fillRect(0, 0, WIDTH, HEIGHT);
 			
-			img= new ImageIcon("D:\\Scripts\\eclipse-workspace\\GamePract2\\src\\res\\Background3.png").getImage();
+			img= new ImageIcon("C://Users//LENOVO//Documents//GitHub//Dodge_Java//src//res//Background3.png").getImage();
 		    g.drawImage(img, 0, 0, getWidth(), getHeight(), null);
 		}
 		
@@ -120,7 +120,7 @@ public class Game extends Canvas implements Runnable, KeyListener{
 			
 			try {
 				//Create pixelPlus Font
-				pixelMPlus = Font.createFont(Font.TRUETYPE_FONT, new File("D:\\Scripts\\eclipse-workspace\\GamePract2\\src\\res\\PixelMplus10-Regular.ttf")).deriveFont(30f);
+				pixelMPlus = Font.createFont(Font.TRUETYPE_FONT, new File("C:/Users/LENOVO/Documents/GitHub/Dodge_Java/src/res/PixelMplus10-Regular.ttf")).deriveFont(30f);
 			} catch(IOException | FontFormatException e){e.printStackTrace();}
 			
 		}
@@ -286,7 +286,7 @@ public class Game extends Canvas implements Runnable, KeyListener{
 			new Game();
 			
 			AudioInputStream inputStream = AudioSystem.getAudioInputStream(
-						new File("D:\\Scripts\\eclipse-workspace\\GamePract2\\src\\res\\Allof0HitpointsLeft.wav")
+						new File("C://Users//LENOVO//Documents//GitHub//Dodge_Java//src//res//Allof0HitpointsLeft.wav")
 																		  );
 			clip = AudioSystem.getClip();
 			URL url0 = null;
@@ -295,11 +295,11 @@ public class Game extends Canvas implements Runnable, KeyListener{
 			URL url3 = null;
 			URL url4 = null;
 			try {
-				url0 = new URL("file:\\D:\\Scripts\\eclipse-workspace\\GamePract2\\src\\res\\jump.wav");
-				url1 = new URL("file:\\D:\\Scripts\\eclipse-workspace\\GamePract2\\src\\res\\coin.wav");
-				url2 = new URL("file:\\D:\\Scripts\\eclipse-workspace\\GamePract2\\src\\res\\crown.wav");
-				url3 = new URL("file:\\D:\\Scripts\\eclipse-workspace\\GamePract2\\src\\res\\hit.wav");
-				url4 = new URL("file:\\D:\\Scripts\\eclipse-workspace\\GamePract2\\src\\res\\dead.wav");
+				url0 = new URL("file:\\C://Users//LENOVO//Documents//GitHub//Dodge_Java//src//res//jump.wav");
+				url1 = new URL("file:\\C://Users//LENOVO//Documents//GitHub//Dodge_Java//src//res//coin.wav");
+				url2 = new URL("file:\\C://Users//LENOVO//Documents//GitHub//Dodge_Java//src//res//crown.wav");
+				url3 = new URL("file:\\C://Users//LENOVO//Documents//GitHub//Dodge_Java//src//res//hit.wav");
+				url4 = new URL("file:\\C://Users//LENOVO//Documents//GitHub//Dodge_Java//src//res//dead.wav");
 			} catch (MalformedURLException e1) {
 				e1.printStackTrace();
 			}
