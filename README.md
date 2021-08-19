@@ -1,8 +1,8 @@
 # Dodge_Java
-An update of the [first version](https://github.com/DYasser/Dodge_Python) in Python. Featuring different level of difficulties and more obstacles, plus the ability to slow down time and new scoring system.
+An updated version of the [first version](https://github.com/DYasser/Dodge_Python) in Python. Featuring: different level of difficulties, more obstacles, the ability to slow down time, and a new scoring system.
 
 ## Execution:
-First screen that appears with running the program is the main menu screen
+* First screen that appears when running the program is the **Main Menu** screen
 
 ![mainMenu](https://github.com/DYasser/Dodge_Java/blob/master/images/mainMenu.png)
 
@@ -11,30 +11,44 @@ As we can see there are 3 options:
 - [ ] Look at Options
 - [ ] Quit the game
 
-Let's start explaining the most obvious one, **Quit** which is as the name says a button to quit the game.
+Since the last option "**Quit**" is (hopefully) obvious for everyone, evidently it allows the user to exit the program, I don't need to explain it.
+So, we are left with only two options:
 
 - [ ] Play the game
 - [ ] Look at Options
 - [X] Quit the game
 
-Let's continue with Options
+Let's see what options the program have to present to us: 
 
-### Options:
+* ### Options:
 
 ![mainMenu](https://github.com/DYasser/Dodge_Java/blob/master/images/optionScreen.png)
 
-Here we can switch the game mode from windowed to fullscreen and adjust the game volume. We can also see *about* the game.
+In this screen, we are able to change the level of the volume by clicking on the *plus* sign to higher the volume or the *minus* sign to lower it instead.
+
+We also have the choice to play the game *windowed* (meaning that the program will appear on a window with the possibility to resize the window, minimize it or even close it with he **X**) or *full screen* (the game will be displayed on the fullest ability of the screen used by the user). To be able to switch between those two modes the user only has to click on the button labelled whatever mode he wants. 
+
+We can also have more information *about* the game by clicking on the button top right labeled "about".
+
+
+* After clicking on the **About** button, we get to see this next screen:
 
 ![mainMenu](https://github.com/DYasser/Dodge_Java/blob/master/images/help.png)
 
-Here we can see all the controls as a help menu.
+In this screen, the user is able to see all different controls he/she will be using, such as: moving right and left, running/ sprinting, jumping, using the slow motion, pausing the game, and toggle fullscreen/ windowed mode only using the keyboard.
+
+The user is also able to understand the goal of the game which is really simple, by reading the section explaining the goal.
+
+The user is also able to go back one page, or directly to the main menu by clicking on the right buttons top left.
+
+
 
 - [ ] Play the game
 - [X] Look at Options
 - [X] Quit the game
 
-Now let's see how the game actually looks like.
-### Gameplay:
+Finally, I can show you the most interesting part of the game which is to actually **play the game**.
+* ### Gameplay:
 
 You first choose what difficulty you want to choose then the game starts:
 
