@@ -50,22 +50,42 @@ The user is also able to go back one page, or directly to the main menu by click
 Finally, I can show you the most interesting part of the game which is to actually **play the game**.
 * ### Gameplay:
 
-You first choose what difficulty you want to choose then the game starts:
+After clicking on the "Play the game" button, you are prompted to choose one of the three available difficulties: Easy, Normal, or Hard.
+
+![mainMenu](https://github.com/DYasser/Dodge_Java/blob/master/images/difficultyScreen.png)
+
+After picking a difficulty, the game starts. The player is giving a 3 second counter to not surprise him and get him all the preparation needed before he/she starts playing.
 
 ![mainMenu](https://github.com/DYasser/Dodge_Java/blob/master/images/gameStart.png)
 
-The game is all about dodge, hence the name. There are 3 main entities that the player should try to avoid at all costs, the **green dots** (snakes), the **white meteors** that keep falling from the sky and the **big white ball** in the middle of the screen that keeps moving up and down.
-There are other entities such as the *red lava* carpet under the plateforms at the beginning left and right. And the final entity which is a random *laser* that pops out of nowhere from time to time dealing lots of damage. Each entity deals an amount of damage with some having another effect on the game.
-The most anoying enemies will probably be the meteors and the snakes, since these two are related. When the player gets hit by a snake a meteor gets added to the 5 initial ones. Same thing for meteors with snakes, which are 2 at the beginning.
+The game is all about dodging. Here I am going to introduce all the enemies to our player:
+
+* The **snakes** (green rectangles): These entities keep slithering on the ground and change directions each time they reach the extremities of the map. When they touch the player, this last one takes damage and his health decreases, he gets few seconds of invulnerability in order to get himself placed somewhere safe. There is a particularity about this entities, which is each time the user gets hit by them they get removed from the map and a new snake spawns randomly, but not only that, a meteor (presented later) also gets added to the initial count.
+
+* The **white meteors**: These entities keep on falling from the sky with a random speed (from a specific range that I programed) and with a random tilt angle (that I also put a specific range for). These entities also have the same characteristic as the snakes, each time you hit them a new snake gets placed down on the ground.
+
+* The **big white ball**: It is possible to see it in the middle of the screen, it keeps moving up and down. This enemy deals a great amount of damage compared to the two others I presented. This entity is easier to avoid since the trajectory isn't random.
+
+* The **red lava**: A carpet-like entity that is situated under the plateforms at the beginning left and right. These obstacles deal less damage and keep appearing and disappearing, so you better keep focused around them!
+
+* The **laser**: The most dangerous enemy out of all the ones mentioned already. This entity pops out of nowhere from time to time dealing lots of damage. It is warned before its appearance in the map with a vertical line and a timer.
+
+
+In my opinion the most annoying enemies will probably be the meteors and the snakes, since these two are related. When the player gets hit by a snake a meteor gets added to the 5 initial ones. Same thing for meteors with snakes, which are 2 at the beginning.
 
 The player has the ability to sprint but can also slow down time by using Q. All these commands can be check in the middle of the game by prompting the pause menu.
 
 ![mainMenu](https://github.com/DYasser/Dodge_Java/blob/master/images/pauseScreen.png)
 
-Finally, after trying your best the game finally ends by a gameover screen showing you the score you got and the max score that anyone has done yet (different for each difficulty)
+Finally, after trying his/her best, the game finally ends on a Game Over screen that shows them the score gotten and the max score that anyone has achieved yet (different for each difficulty)
 
 ![mainMenu](https://github.com/DYasser/Dodge_Java/blob/master/images/gameOverScreen.png)
 
 - [X] Play the game
 - [X] Look at Options
 - [X] Quit the game
+
+Now that I am done explaining the player's perspective and explaining most of the logic, we can move on to explaining how I coded the logic of this game.
+
+## The Code Logic:
+
