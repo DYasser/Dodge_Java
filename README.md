@@ -96,7 +96,9 @@ I started by creating a game thread that will be leading the whole game. I creat
 
 In this section I will explain four main parts that I think are most important when talking about the process of coding this program. 
 
+
 * Collisions: 
+
 Collisions are the most important characteristic inside this game. Collisions are what allows all the entities to talk and communicate to each other. We can see two main collisions here: Block Collision such as the platforms that allows the user to step on when collided, and Damage Collision that occurs when the user hits an enemy.
 
 Collisions work using the coordinates of two points in each entity. So, when an entity enters another we can know that by substracting the value of one entity and help us with its width or heigth to know if an entity collided with another one. The picture below demonstrates what I explained here. 
@@ -109,5 +111,30 @@ By updating every entity, he is updating the new values but also the rendering s
 
 Now that I explained how I dealed with collisions we can move to another important aspect.
 
-* Gravity:
-In 
+
+* Game Physics:
+
+In a game where the user needs to jump all the time and have different enemies going everywhere, game physics are what is making everything come to life.
+
+All the entities are having different forces being applied to them such as gravity that sticks them to the ground or brings them back to it. To code it, I used a constant vector that is applied to each entity with a different values depending on the entity. So, by applying that constant vector and updating the new value each millisecond which makes it look like the entities are getting pulled down and gives us gravity.
+
+This explains how all the physics used were applied into the game.
+
+* Drawing:
+
+To make the game look like one, I had to use many sprites to have a clean render for the user to understand what is happening in his screen. For each screen I drew different shapes depending on what was needed. For example, in the main menu, I created rectangles that change size each few seconds to have a effect of the options moving and having a great render overall.
+
+Same goes for the background, which is implemented in the main class since the background stays the same. I only added a fade in front to make the user understand when the game starts and when it isn't.
+
+After drawing shapes and images, we need to draw the letters which is a seperate thing from drawing images. I first loaded the font style I wanted to use in the main class, then used it by giving it a width, size and space between each letter.
+
+Finally, coming to the most important part.
+
+* States and Screens:
+
+This is obviously the most important part, since for each menu I had created a class that gets updated depending on whether it was running or not. 
+
+I created an enum that gathers all of the states and is the status to our game, to make it understand what state we are in and when we are switching between states.
+
+## Summary:
+
