@@ -90,7 +90,7 @@ Now that I am done explaining the player's perspective and explaining most of th
 
 ## The Code Logic:
 
-I coded the game using Java, but the logic stays the same for most languages. In some cases, there might be better options for other languages with broader libraries.
+I coded the game using Java, but the logic stays the same for most languages. There might be better options for some languages with special libraries.
 
 I started by creating a game thread that will be leading the whole game. I created a game loop that will keep looping and updating everything needed for the user to be able to play the game smoothly.
 
@@ -99,15 +99,15 @@ In this section I will explain four main parts that I think are most important w
 
 * Collisions: 
 
-Collisions are the most important characteristic inside this game. Collisions are what allows all the entities to talk and communicate to each other. We can see two main collisions here: Block Collision such as the platforms that allows the user to step on when collided, and Damage Collision that occurs when the user hits an enemy.
+Collisions are the most important instance inside the game. Collisions are what allows all the entities to communicate with each other. We can see two main collisions here: Block Collision such as the platforms that allows the user to step on when collided, and Damage Collision that occurs when the user gets hit by an enemy.
 
-Collisions work using the coordinates of two points in each entity. So, when an entity enters another we can know that by substracting the value of one entity and help us with its width or heigth to know if an entity collided with another one. The picture below demonstrates what I explained here. 
+Collisions work using the coordinates of two points in each entity. So, when an entity enters another one we can know by substracting the value of one entity's coordinates and help us with its width or heigth to know if the two entities collided. The picture below demonstrates what I explained here. 
 
 ![mainMenu](https://github.com/DYasser/Dodge_Java/blob/master/images/collisions.png)
 
-After calculating these collisions, the program needs to be able to do so each time every millisecond. This is where the *Handler* shows its importance. The handler's job is easy, yet hard. He needs to update each entity added to him every millisecond.
+After calculating these collisions, the program needs to be able to determine that every millisecond. This is where the *Handler* shows its importance. The handler's job is easy, yet hard. He updates each entity added to its array every millisecond.
 
-By updating every entity, he is updating the new values but also the rendering since the user needs to have a graphical return to understand what is happening.
+By updating every entity, it is updating the new values but also the rendering since the user needs to have a graphical return to understand what is happening.
 
 Now that I explained how I dealed with collisions we can move to another important aspect.
 
@@ -116,13 +116,13 @@ Now that I explained how I dealed with collisions we can move to another importa
 
 In a game where the user needs to jump all the time and have different enemies going everywhere, game physics are what is making everything come to life.
 
-All the entities are having different forces being applied to them such as gravity that sticks them to the ground or brings them back to it. To code it, I used a constant vector that is applied to each entity with a different values depending on the entity. So, by applying that constant vector and updating the new value each millisecond which makes it look like the entities are getting pulled down and gives us gravity.
+All the entities are having different forces being applied to them such as gravity that attracts them to the ground. In order to code it, I used a constant vector that is applied to each entity with different values depending on the entity. So, by applying that constant vector and updating the new value every millisecond it makes it look like the entities are getting pulled down and gives us the gravity effect.
 
 This explains how all the physics used were applied into the game.
 
 * Drawing:
 
-To make the game look like one, I had to use many sprites to have a clean render for the user to understand what is happening in his screen. For each screen I drew different shapes depending on what was needed. For example, in the main menu, I created rectangles that change size each few seconds to have a effect of the options moving and having a great render overall.
+To make the game look like one, I had to use many sprites to have a clean render for the user to understand what is happening in his screen. For each screen I drew different shapes depending on what was needed. For example, in the main menu, I created rectangles that change size each few seconds to have an effect of the options moving and having a great render overall.
 
 Same goes for the background, which is implemented in the main class since the background stays the same. I only added a fade in front to make the user understand when the game starts and when it isn't.
 
@@ -134,7 +134,6 @@ Finally, coming to the most important part.
 
 This is obviously the most important part, since for each menu I had created a class that gets updated depending on whether it was running or not. 
 
-I created an enum that gathers all of the states and is the status to our game, to make it understand what state we are in and when we are switching between states.
+I created an enum that gathers all of the states and is what helps the game to understand in what screen the user is and when he/she is switching between states.
 
-## Summary:
-
+>     This is the end of the documentation.
